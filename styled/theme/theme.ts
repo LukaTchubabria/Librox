@@ -1,5 +1,9 @@
 const theme = {
   color: {
+    whitesmoke: "#F4F4F4",
+    liteblue:"#567895",
+    litegray: "#BFC9D1",
+    carrot: "#CE8B65",
     font_1: "rgba(0, 0, 0, 0.87)",
     font_2: "rgba(0, 0, 0, 0.60)",
     font_3: "rgba(0, 0, 0, 0.32)",
