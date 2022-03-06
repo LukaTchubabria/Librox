@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import theme from "../../styled/theme/theme";
 
 type Text = {
   text: string | number;
 };
 
-const Button: React.FC<Text> = ({text}) => {
-
+const Button: React.FC<Text> = ({ text }) => {
   return <ButtonWrapper>{text}</ButtonWrapper>;
 };
 
@@ -19,7 +19,7 @@ const ButtonWrapper = styled.button`
 
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
+  color: ${(props) => props.theme.color.black};
 
   border: none;
   outline: none;

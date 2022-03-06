@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import { useState } from "react";
 import styled from "styled-components";
-import Button from "../components/atom/Button";
+import Button from "../src/atoms/Button";
 
 const data = [{ a: "follow" }, { a: "follow" }, { a: "follow" }];
 
