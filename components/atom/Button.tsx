@@ -6,6 +6,7 @@ type Text = {
 };
 
 const Button: React.FC<Text> = ({text}) => {
+
   return <ButtonWrapper>{text}</ButtonWrapper>;
 };
 

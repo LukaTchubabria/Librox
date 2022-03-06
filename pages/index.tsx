@@ -7,7 +7,7 @@ import Button from "../components/atom/Button";
 const data = [{ a: "follow" }, { a: "follow" }, { a: "follow" }];
 
 const Home: NextPage = () => {
-  const [a, setA] = useState<number | undefined>();
+  const [a, setA] = useState<number>(0);
   return (
     <MainWrapper>
       <Text>kldfghj;lsdfg</Text>
@@ -17,6 +17,8 @@ const Home: NextPage = () => {
         <Button key={i} text={item.a}></Button>
       ))}
       <Link href="/contact">fasdljkfha</Link>
+
+      <button onClick={() => setA((prevState) => prevState + 1)}>{a}</button>
     </MainWrapper>
   );
 };
