@@ -19,8 +19,12 @@ const ButtonWrapper = styled.button`
 
   font-size: 14px;
   line-height: 21px;
-  color: ${(props) => props.theme.color.black};
+  color: ${(props) => props.theme.color.grey};
 
   border: none;
   outline: none;
+
+  @media ${(props) => props.theme.breackpoints.md} {
+    font-size: 12px;
+  }
 `;
