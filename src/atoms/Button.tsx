@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import theme from "../../styled/theme/theme";
+import theme from "../../styled/theme";
 
 type Text = {
   text: string | number;
@@ -19,12 +19,10 @@ const ButtonWrapper = styled.button`
 
   font-size: 14px;
   line-height: 21px;
-  color: ${(props) => props.theme.color.grey};
+  color: "rgba(255, 255, 255, 0.87)";
 
   border: none;
   outline: none;
 
-  @media ${(props) => props.theme.breackpoints.md} {
-    font-size: 12px;
-  }
+
 `;
