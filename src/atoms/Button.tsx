@@ -24,7 +24,5 @@ const ButtonWrapper = styled.button`
   border: none;
   outline: none;
 
-  @media ${(props) => props.theme.breackpoints.md} {
-    font-size: 12px;
-  }
+
 `;
