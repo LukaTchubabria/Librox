@@ -7,9 +7,11 @@ import UserNav from "../organisms/UserNav";
 const Header = () => {
   return (
     <HeaderTemplate>
-      <SearchInput></SearchInput>
-      <Notification></Notification>
-      <UserNav></UserNav>
+      <SearchInput />
+      <UserInfoBlock>
+        <Notification />
+        <UserNav />
+      </UserInfoBlock>
     </HeaderTemplate>
   );
 };
@@ -17,9 +19,18 @@ const Header = () => {
 export default Header;
 
 const HeaderTemplate = styled.div`
-  padding: 20px 25px;
-  display: flex;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 382px;
+  padding: 20px 30px 20px 25px;
 
   background: rgba(255, 255, 255, 0.14);
   border-radius: 0px 0px 0px 20px;
+`;
+
+const UserInfoBlock = styled.div`
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 25px;
 `;
