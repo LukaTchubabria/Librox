@@ -2,8 +2,12 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import styled from "styled-components";
 import Button from "../src/atoms/Button";
+import Filter from "../src/organisms/FIlter";
+import Category from "../src/templates/Category";
+import FilterBooks from "../src/templates/FilterBooks";
 import Header from "../src/templates/Header";
 import Navigation from "../src/templates/Navigation";
+import Recommend from "../src/templates/Recommend";
 import SuggestedAuthor from "../src/templates/SuggestedAuthor";
 import UserFastNav from "../src/templates/UserFastNav";
 
@@ -11,12 +15,11 @@ const Home: NextPage = () => {
   const [a, setA] = useState<number>(0);
   return (
     <MainPageWrapper>
-      <div>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, nobis.
-        Necessitatibus fugit ipsum neque odit deleniti debitis beatae id iste
-        eaque nulla repudiandae aperiam sit, veritatis cupiditate earum, sunt
-        at!
-      </div>
+      <MainWrapper>
+        <Category />
+        <Recommend />
+        <FilterBooks />
+      </MainWrapper>
       <RightSideCont>
         <UserFastNav />
         <SuggestedAuthor />
@@ -35,6 +38,12 @@ const MainPageWrapper = styled.div`
 `;
 
 const RightSideCont = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+`;
+
+const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
